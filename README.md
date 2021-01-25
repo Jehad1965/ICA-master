@@ -2,7 +2,9 @@
 
 # Packages used for API projects:
 Microsoft.AspNetCore.Authentication.JwtBear(3.1.0)
+
 I used defferent EntityframworkCore pakages including Tools and Sql servers.
+
 I used Multiple sawshbuckle.AspNetcore such as AspNetCore.SwaggerGen(5.6.3) and ore(5.6.0)
 
 # Packages used for Testing Project:
