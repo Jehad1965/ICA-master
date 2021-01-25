@@ -1,6 +1,8 @@
 
 using Assignment.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Threading.Tasks;
 
 namespace AccountTest
 {
@@ -47,10 +49,22 @@ namespace AccountTest
         public void AddStaff_IsValid_Returnfalse()
         {
             staff s = new staff();
-            s.StaffName = " Tony";
+            s.StaffName = null;
             var Result = s.StaffName;
+            var ExpResult = Result;
+            Assert.AreEqual(Result, ExpResult);
 
         }
+        [TestMethod]
+        public void DeleteStaff_null_Retuensfalse(int id)
+        {
+            staff SS = new staff();
+            SS.Id = 1;
+            var result = SS.Id;
+            var ExpectedR = result;
+            Assert.AreEqual(result, ExpectedR);
+        }
+
 
     }
 }
