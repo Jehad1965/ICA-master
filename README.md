@@ -9,8 +9,11 @@ I used Multiple sawshbuckle.AspNetcore such as AspNetCore.SwaggerGen(5.6.3) and 
 
 # Packages used for Testing Project:
 I used these package
+
 1- coverlet.collector(1.2.0)
+
 2- microsoft.NET.Test.Sdk(16.5.0)
+
 3- MSTest.TestFrameWork(2.1.0)
 
 
@@ -24,17 +27,27 @@ I used Asp.netCore 2.2
 Has your team completed the original architecture diagram, including incorporating feedback from your tutor?
 yes
 
-Has your team updated the diagram to show / comment upon how the final implementation differs from the intended?
+
+Has your team updated the diagram to show / comment upon how the final implementation differs from the intended
 No
+
 
 Has your team provided a short document to sufficiently explain and justify your design choices (especially with respect to scalability and resilience)?
 yes
+
+
 Have you included copies of the agreed development plans for each team member?
 Yes
+
+
 Has your team discussed the peer point distribution for this element of the work?
 yes
+
+
 Have you included your proposed peer point distribution for this element within the README file?
 yes
+
+
 
 # Peer Marks:
 Ashley Hood 3.75
