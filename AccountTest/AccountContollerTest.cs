@@ -10,11 +10,19 @@ namespace AccountTest
     public class AccountContollerTest
     {
         [TestMethod]
-        public void RegisterAsync_null_ReturnsTrue()
+        public void RegisterAsync_null_Returnsfalse()
         {
             var customer = new Customer();
-            var result = customer.FirstName = "Jehad";
-            var exresult = customer.FirstName = "Jehad";
+            customer.Id = 1;
+            customer.Address = "68 Maddren";
+            customer.FirstName = "Hasan";
+            customer.LastName = " Jehad";
+            customer.Password = "EWRTR1";
+            customer.PhoneNo = "09876543";
+            customer.PostCode = "TS55RE";
+            customer.ConfirmPassword = null;
+            var result = customer.FirstName;
+            var exresult = customer.FirstName = "Hasan";
             Assert.AreEqual(result, exresult);
         }
         [TestMethod]
@@ -56,7 +64,7 @@ namespace AccountTest
 
         }
         [TestMethod]
-        public void DeleteStaff_null_Retuensfalse(int id)
+        public void DeleteStaff_null_Retuensfalse()
         {
             staff SS = new staff();
             SS.Id = 1;
@@ -64,7 +72,15 @@ namespace AccountTest
             var ExpectedR = result;
             Assert.AreEqual(result, ExpectedR);
         }
-
+        [TestMethod]
+        public void StaffLogin_isValid_ReturnsTrue()
+        {
+            staff L = new staff();
+            L.Password = " TRAEA";
+            var result = L.Password;
+            var expecteR = result;
+            Assert.AreEqual(result, expecteR);
+        }
 
     }
 }
